@@ -1,4 +1,7 @@
 from dataclasses import dataclass
+from enum import Enum
+
+
 
 @dataclass(repr=False)
 class Wall:
@@ -21,6 +24,19 @@ class Hold:
     type: str
     difficulty: int
 
+class HoldSizes(Hold, Enum):
+    large = "large"
+    medium = "medium"
+    small = "small"
+
+class HoldTypes(Hold, Enum):
+    jug = "jug"
+    crimp = "crimp"
+    foothold = "foothold"
+    pocket = "pocket"
+    sloper = "sloper"
+    pinch = "pinch"
+
     def __repr__(self) -> str:
      return f"This piece is a {self.size} {self.type} and has a difficulty rating of {self.difficulty}."
 
@@ -28,8 +44,9 @@ piece1 = Hold(size="large", type="foothold", difficulty=1)
 piece2 = Hold(size= "medium", type= "jug", difficulty= 10)
 piece3 = Hold(size="small", type= "crimp", difficulty= 15)
 
-#@dataclass(repr=False)
-#class Route:
+@dataclass(repr=False)
+class Route:
+
 
 
 if __name__ == '__main__':
