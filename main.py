@@ -57,20 +57,21 @@ def main() ->None:
     # piece3 = Hold(size="small", type="crimp", difficulty=15)
 
     route = Route(name="Wädi")
-    # wall = Wall(name="Uster", width=20, height=13, angle=0)
+    # wall = Wall(name="Uster", width=4, height=13, angle=0)
 
 
-    hold1
-    hold2
-    ...
-    holdN
 
-    route1 = Route(name, holds=(hold1, hold2...))
-    route2 ...
+   # hold1
+    #hold2
+    #...
+    #holdN
 
-    wall = Wall(name, routes=(route1, route2...))
+    #route1 = Route(name, holds=(hold1, hold2...))
+    #route2 ...
 
-    print(wall)
+    #wall = Wall(name, routes=(route1, route2...))
+
+    #print(wall)
 
 if __name__ == '__main__':
     main()
