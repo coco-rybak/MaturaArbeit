@@ -1,5 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
+from pprint import pprint
 # from enum import Enum
 
 
@@ -57,6 +58,7 @@ def main() ->None:
     # piece3 = Hold(size="small", type="crimp", difficulty=15)
 
     route = Route(name="Wädi")
+    pprint(route)
     # wall = Wall(name="Uster", width=4, height=13, angle=0)
 
 
