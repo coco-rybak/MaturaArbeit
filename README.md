@@ -1,6 +1,6 @@
 # Project Description
 
-This project is my Maturitätsarbeit. Its final goal is to be able to generate climbing routes given a set of restrictions and demands (detailed in the file Climbing.md).
+This project is my __Maturitätsarbeit__. Its final goal is to be able to generate climbing routes given a set of restrictions and demands (detailed in the file Climbing.md).
 Here is a very short breakdown of my goals for the project and a general plan: (last updated 31.05.26) 
 
 ## Level 0: Basic framework complete
