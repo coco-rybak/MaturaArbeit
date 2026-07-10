@@ -1,0 +1,21 @@
+{
+    "$schema": "./wall-schema.json",
+    "holds": [
+        {
+            "id": "h1",
+            "x": 100,
+            "y": 800,
+            "type": "jug"
+        },
+        {
+            "id": "h2",
+            "x": 150,
+            "y": 650,
+            "type": "crimp"
+        }
+    ],
+    "route": [
+        "h1",
+        "h2"
+    ]
+}
