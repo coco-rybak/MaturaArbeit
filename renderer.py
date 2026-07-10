@@ -5,8 +5,11 @@ from pathlib import Path
 
 import drawsvg as draw
 
-# The coordinates are set up so that the top right corner is at (0,0). Which may not be intuitive since you start climbing from the bottom?
-# Perhaps it makes sense to add the wall width and height to the json rather than assuming it here.
+# TODOs
+#
+# - The coordinates are set up so that the top right corner is at (0,0). Which may not be intuitive since you start climbing from the bottom?
+# - All the holds are rendered, even if they do not belong to any route.
+# - Perhaps it makes sense to add the wall width and height to the json rather than assuming it here.
 
 
 class WallRenderer:
