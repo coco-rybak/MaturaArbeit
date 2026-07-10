@@ -3,6 +3,12 @@
     "title": "Schema der Kletterrouten an der Wand",
     "type": "object",
     "properties": {
+        "width": {
+            "type": "integer"
+        },
+        "height": {
+            "type": "integer"
+        },
         "holds": {
             "type": "array",
             "description": "Eine Liste aller Griffe an der Wand.",
@@ -45,6 +51,8 @@
         }
     },
     "required": [
+        "width",
+        "height",
         "holds",
         "route"
     ]

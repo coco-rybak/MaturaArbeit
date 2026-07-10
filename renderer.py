@@ -5,15 +5,14 @@ from pathlib import Path
 
 import drawsvg as draw
 
-# TODOs
-#
-# - The coordinates are set up so that the top right corner is at (0,0). Which may not be intuitive since you start climbing from the bottom?
+# TODOs:
+# - The coordinates are set up so that the top-left corner is at (0,0). Which may not be intuitive since you start climbing from the bottom?
 # - All the holds are rendered, even if they do not belong to any route.
-# - Perhaps it makes sense to add the wall width and height to the json rather than assuming it here.
 
 
 class WallRenderer:
-    def __init__(self, width=500, height=800):
+    def __init__(self, wall):
+        width, height = wall["width"], wall["height"]
         self.d = draw.Drawing(width, height)
         self.d.append(draw.Rectangle(0, 0, width, height, fill="#f0f0f0"))
 
@@ -22,11 +21,11 @@ class WallRenderer:
 
         self.d.append(draw.Circle(x, y, 6, fill="red", stroke="black"))
 
-    def render(self, data):
-        hold_lookup = {h["id"]: h for h in data["holds"]}
+    def render(self, wall):
+        hold_lookup = {h["id"]: h for h in wall["holds"]}
 
         points = []
-        for hold_id in data["route"]:
+        for hold_id in wall["route"]:
             if hold_id in hold_lookup:
                 h = hold_lookup[hold_id]
                 points.extend([h["x"], h["y"]])
@@ -34,7 +33,7 @@ class WallRenderer:
         if len(points) >= 4:
             self.d.append(draw.Lines(*points, close=False, fill="none", stroke="#999", stroke_width=3, stroke_dasharray="10,5"))
 
-        for h in data["holds"]:
+        for h in wall["holds"]:
             self.draw_hold(h)
 
 
@@ -47,7 +46,7 @@ def main():
 
     try:
         with open(input_path, "r") as f:
-            route_data = json.load(f)
+            wall_data = json.load(f)
     except FileNotFoundError as e:
         print(f"Error: Could not find file: {e.filename}")
         sys.exit(1)
@@ -56,8 +55,8 @@ def main():
         sys.exit(1)
 
     output_filename = input_path.with_suffix(".svg")
-    renderer = WallRenderer()
-    renderer.render(route_data)
+    renderer = WallRenderer(wall_data)
+    renderer.render(wall_data)
 
     renderer.d.save_svg(str(output_filename))
     print(f"SVG output: {output_filename}")

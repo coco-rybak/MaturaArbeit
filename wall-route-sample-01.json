@@ -1,5 +1,7 @@
 {
     "$schema": "./wall-schema.json",
+    "width": 1200,
+    "height": 800,
     "holds": [
         {
             "id": "h1",
