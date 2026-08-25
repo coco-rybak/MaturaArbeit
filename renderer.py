@@ -17,9 +17,23 @@ class WallRenderer:
         self.d.append(draw.Rectangle(0, 0, width, height, fill="#f0f0f0"))
 
     def draw_hold(self, hold):
-        x, y = hold["x"], hold["y"]
+        x, y, type = hold["x"], hold["y"], hold["type"]
+        width, height = hold["width"], hold["height"]
 
-        self.d.append(draw.Circle(x, y, 6, fill="red", stroke="black"))
+        if type == "crimp":
+            self.d.append(draw.Rectangle(x, y, width=4, height=1, fill="blue"))
+
+        else if type == "jug":
+            self.d.append(draw.Rectangle(x, y, width= 9, height= 6, fill = "grey"))
+
+        else if type == "sloper":
+            self.d.append(draw.Triangle(x, y, width= 4, height= 1, fill = "yellow"))
+
+        else if type == "pinch":
+            self.d.append(draw.Rectangle(x, y, width= 1, height= 4,fill = "green"))
+
+        else if type == "pocket":
+            self.d.append(draw.Circle(x, y, 6, fill="red",))
 
     def render(self, wall):
         hold_lookup = {h["id"]: h for h in wall["holds"]}
