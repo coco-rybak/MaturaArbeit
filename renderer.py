@@ -23,16 +23,16 @@ class WallRenderer:
         if type == "crimp":
             self.d.append(draw.Rectangle(x, y, width=4, height=1, fill="blue"))
 
-        else if type == "jug":
+        elif type == "jug":
             self.d.append(draw.Rectangle(x, y, width= 9, height= 6, fill = "grey"))
 
-        else if type == "sloper":
+        elif type == "sloper":
             self.d.append(draw.Triangle(x, y, width= 4, height= 1, fill = "yellow"))
 
-        else if type == "pinch":
+        elif type == "pinch":
             self.d.append(draw.Rectangle(x, y, width= 1, height= 4,fill = "green"))
 
-        else if type == "pocket":
+        elif type == "pocket":
             self.d.append(draw.Circle(x, y, 6, fill="red",))
 
     def render(self, wall):
