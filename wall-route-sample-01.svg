@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#f0f0f0" />
+<path d="M100,750 L150,600 L400,550 L350,400 L300,175 L325,50" fill="none" stroke="#999" stroke-width="3" stroke-dasharray="10,5" />
+<circle cx="100" cy="750" r="6" fill="red" stroke="black" />
+<circle cx="150" cy="600" r="6" fill="red" stroke="black" />
+<circle cx="400" cy="550" r="6" fill="red" stroke="black" />
+<circle cx="350" cy="400" r="6" fill="red" stroke="black" />
+<circle cx="300" cy="175" r="6" fill="red" stroke="black" />
+<circle cx="325" cy="50" r="6" fill="red" stroke="black" />
+</svg>
