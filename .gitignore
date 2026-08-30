@@ -9,5 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
+# IDE
+.idea/
+
 # Misc unrelated files and directories
 .DS_Store
