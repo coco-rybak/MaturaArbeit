@@ -16,6 +16,11 @@ class WallRenderer:
         self.d = draw.Drawing(width, height)
         self.d.append(draw.Rectangle(0, 0, width, height, fill="#f0f0f0"))
 
+
+    def draw_triangle(selfself,hold):
+
+
+
     def draw_hold(self, hold):
         x, y, type = hold["x"], hold["y"], hold["type"]
         width, height = hold["width"], hold["height"]
@@ -27,7 +32,7 @@ class WallRenderer:
             self.d.append(draw.Rectangle(x, y, width= 9, height= 6, fill = "grey"))
 
         elif type == "sloper":
-            self.d.append(draw.Triangle(x, y, width= 4, height= 1, fill = "yellow"))
+            self.d.append(draw.Rectangle(x, y, width= 4, height= 1, fill = "yellow"))
 
         elif type == "pinch":
             self.d.append(draw.Rectangle(x, y, width= 1, height= 4,fill = "green"))
