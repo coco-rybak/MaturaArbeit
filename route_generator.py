@@ -13,13 +13,16 @@ def random_hold():
 #makes user choose a difficulty
 def difficulty_choice():
     difficulties = ["3", "4", "5", "6a", "7a", "8a", "6b", "7b", "8b", "6c", "7c", "8c"]
-    print("What grade for the route do you want?")
-    difficulty = input()
-    if difficulty not in difficulties:
-        print("Please choose a valid difficulty")
 
-    else:
-        print(f" {difficulty}")
+    while True:
+        print(f"Overall route grade can be any of the following: {difficulties}. Please choose:")
+        difficulty = input()
+
+        if difficulty not in difficulties:
+            print("That is not a valid grade. Please choose another.")
+        else:
+            print(f"Good Luck! at grade: {difficulty}")
+            break
 
 #makes user choose a hold type
 def hold_choice():
@@ -27,7 +30,7 @@ def hold_choice():
     print("Is there a specific type of hold you want? If you don't care which, please type \"does not matter\"")
     hold_choice = input()
     if hold_choice in holds:
-        print ("You have chosen the hold type" f"{hold_choice}" ". Excellent choice.")
+        print ("You have chosen the hold type " f"{hold_choice}" ". Excellent choice.")
     elif hold_choice == "does not matter":
         hold_choice = random.choice(holds)
         print ("Since you were too weak to make a decision, the computer has decided the hold type " f"{hold_choice} " "for you, an excellent choice.")
