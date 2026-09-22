@@ -5,10 +5,8 @@ from pathlib import Path
 
 import drawsvg as draw
 
-# TODOs:
-# - The coordinates are set up so that the top-left corner is at (0,0). Which may not be intuitive since you start climbing from the bottom?
-# - All the holds are rendered, even if they do not belong to any route.
-
+# TODO: The coordinates are set up so that the top-left corner is at (0,0). Which may not be intuitive since you start climbing from the bottom?
+# TODO: All the holds are rendered, even if they do not belong to any route.
 
 class WallRenderer:
     def __init__(self, wall):
@@ -16,14 +14,9 @@ class WallRenderer:
         self.d = draw.Drawing(width, height)
         self.d.append(draw.Rectangle(0, 0, width, height, fill="#f0f0f0"))
 
-
-    def draw_triangle(selfself,hold):
-
-
-
     def draw_hold(self, hold):
         x, y, type = hold["x"], hold["y"], hold["type"]
-        width, height = hold["width"], hold["height"]
+        # width, height = hold["width"], hold["height"]
 
         if type == "crimp":
             self.d.append(draw.Rectangle(x, y, width=4, height=1, fill="blue"))
