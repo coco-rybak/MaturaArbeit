@@ -27,15 +27,32 @@ def difficulty_choice():
 #makes user choose a hold type
 def hold_choice():
     holds = ["crimp", "jug", "sloper", "pinch", "pocket"]
-    print("Is there a specific type of hold you want? If you don't care which, please type \"does not matter\"")
-    hold_choice = input()
-    if hold_choice in holds:
-        print ("You have chosen the hold type " f"{hold_choice}" ". Excellent choice.")
-    elif hold_choice == "does not matter":
-        hold_choice = random.choice(holds)
-        print ("Since you were too weak to make a decision, the computer has decided the hold type " f"{hold_choice} " "for you, an excellent choice.")
-    else:
-        print ("Nothing was chosen, not even randomness. Try again.")
+
+    while True:
+        print("Is there a specific type of hold you want? If you don't care which, please type \"does not matter\"")
+        hold_choice = input()
+
+        if hold_choice not in holds or hold_choice == "does not matter":
+            print("Nothing was chosen, not even randomness. Try again.")
+
+        elif hold_choice == "does not matter":
+            hold_choice = random.choice(holds)
+            print ("Since you were too weak to make a decision, the computer has decided the hold type " f"{hold_choice} " "for you, an excellent choice.")
+            break
+        else:
+            print("You have chosen the hold type " f"{hold_choice}" ". Excellent choice.")
+            break
+
+
+
+class MyObject:
+    def __init__(self, x, y):
+        self.position = [x, y]
+
+def position_generator():
+
+
+    #2-dimensional positioning
 
 '''
 #french scale to interval translation (amount of points for the generator)
@@ -53,6 +70,7 @@ def converter_grade():
     "8b" = 83
     "8c" = 87
 '''
+
 
 if __name__ == '__main__':
     difficulty_choice()

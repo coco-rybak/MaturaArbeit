@@ -19,19 +19,22 @@ class WallRenderer:
         # width, height = hold["width"], hold["height"]
 
         if type == "crimp":
-            self.d.append(draw.Rectangle(x, y, width=4, height=1, fill="blue"))
+            self.d.append(draw.Rectangle(x, y, width=10, height=3, fill="orange"))
 
         elif type == "jug":
-            self.d.append(draw.Rectangle(x, y, width= 9, height= 6, fill = "grey"))
+            self.d.append(draw.Rectangle(x, y, width= 15, height= 15, fill = "black"))
 
         elif type == "sloper":
-            self.d.append(draw.Rectangle(x, y, width= 4, height= 1, fill = "yellow"))
+            self.d.append(draw.Circle(x, y, 9, fill="red",))
 
         elif type == "pinch":
-            self.d.append(draw.Rectangle(x, y, width= 1, height= 4,fill = "green"))
+            self.d.append(draw.Rectangle(x, y, width= 4, height= 15,fill = "green"))
 
         elif type == "pocket":
-            self.d.append(draw.Circle(x, y, 6, fill="red",))
+            self.d.append(draw.Circle(x, y, 6, fill="yellow",))
+
+        elif type == "foothold"
+            self.d.append(draw.Circle(x, y, 2, fill="grey", ))
 
     def render(self, wall):
         hold_lookup = {h["id"]: h for h in wall["holds"]}

@@ -1,42 +1,42 @@
 {
-    "$schema": "./wall-schema.json",
+    "$schema": "../wall-schema.json",
     "width": 1200,
     "height": 800,
     "holds": [
         {
             "id": "h1",
             "x": 100,
-            "y": 750,
+            "y": 50,
             "type": "jug"
         },
         {
             "id": "h2",
             "x": 150,
-            "y": 600,
+            "y": 100,
             "type": "crimp"
         },
         {
             "id": "h3",
-            "x": 400,
-            "y": 550,
-            "type": "jug"
+            "x": 200,
+            "y": 150,
+            "type": "sloper"
         },
         {
             "id": "h4",
-            "x": 350,
-            "y": 400,
-            "type": "crimp"
+            "x": 225,
+            "y": 200,
+            "type": "pocket"
         },
         {
             "id": "h5",
-            "x": 300,
-            "y": 175,
-            "type": "crimp"
+            "x": 175,
+            "y": 250,
+            "type": "pinch"
         },
         {
             "id": "h6",
-            "x": 325,
-            "y": 50,
+            "x": 100,
+            "y": 300,
             "type": "crimp"
         }
     ],
@@ -46,6 +46,7 @@
         "h3",
         "h4",
         "h5",
+        "h6",
         "h6"
     ]
 }
