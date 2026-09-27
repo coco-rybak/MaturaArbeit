@@ -30,7 +30,8 @@
                             "crimp",
                             "sloper",
                             "pinch",
-                            "pocket"
+                            "pocket",
+                            "foothold"
                         ],
                         "default": "jug"
                     }
