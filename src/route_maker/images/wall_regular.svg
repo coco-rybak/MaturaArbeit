@@ -1,0 +1,64 @@
+<svg style="max-width:100%; height:auto; display:block;" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+  <!-- default geometry values for this type of wall -->
+  <metadata>{"width":"300","height":"1700"}</metadata>
+
+  <rect width="800" height="500" fill="#FFFEFB"/>
+
+  <!-- floor -->
+  <line x1="32" y1="400" x2="768" y2="400" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- tall structure - top beam -->
+  <line x1="80" y1="70" x2="720" y2="70" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- vertical steel supports hint -->
+  <line x1="80" y1="70" x2="80" y2="400" stroke="#1A1A1A" stroke-width="2" opacity="0.25"/>
+  <line x1="720" y1="70" x2="720" y2="400" stroke="#1A1A1A" stroke-width="2" opacity="0.25"/>
+
+  <!-- main tall walls - two panels -->
+  <path d="M 110 70 L 410 70 L 410 400 L 110 400 Z" fill="#EDE9E2" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M 410 70 L 690 70 L 690 400 L 410 400 Z" fill="#EAE6DF" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- top anchors and ropes -->
+  <g fill="#1A1A1A">
+    <circle cx="200" cy="78" r="5"/>
+    <circle cx="330" cy="78" r="5"/>
+    <circle cx="500" cy="78" r="5"/>
+    <circle cx="600" cy="78" r="5"/>
+  </g>
+  <g stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" opacity="0.55" stroke-dasharray="8 8">
+    <line x1="200" y1="84" x2="200" y2="400"/>
+    <line x1="330" y1="84" x2="330" y2="400"/>
+    <line x1="500" y1="84" x2="500" y2="400"/>
+    <line x1="600" y1="84" x2="600" y2="400"/>
+  </g>
+
+  <!-- holds - more dense, vertical pattern -->
+  <g>
+    <circle cx="160" cy="130" r="7" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="250" cy="145" r="6" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="180" cy="195" r="7" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="290" cy="210" r="6" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="220" cy="260" r="7" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="350" cy="280" r="6" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="170" cy="330" r="7" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="280" cy="345" r="6" fill="#1A1A1A" opacity="0.15"/>
+    <!-- second panel -->
+    <circle cx="470" cy="125" r="7" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="560" cy="155" r="6" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="500" cy="210" r="7" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="620" cy="230" r="6" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="540" cy="290" r="7" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="460" cy="330" r="6" fill="#1A1A1A" opacity="0.15"/>
+    <circle cx="610" cy="340" r="7" fill="#1A1A1A" opacity="0.15"/>
+  </g>
+
+  <!-- colored accent holds to show route -->
+  <circle cx="200" cy="195" r="9" fill="#E07A5F"/>
+  <circle cx="260" cy="260" r="8.5" fill="#81B29A"/>
+  <circle cx="540" cy="180" r="9" fill="#E07A5F"/>
+  <circle cx="580" cy="290" r="8.5" fill="#F2CC8F"/>
+
+  <!-- footer -->
+  <rect x="110" y="408" width="580" height="10" rx="3" fill="#1A1A1A" opacity="0.06"/>
+  <text x="400" y="455" font-family="Inter, sans-serif" font-size="14" letter-spacing="2.5" fill="#1A1A1A" opacity="0.85" text-anchor="middle">REGULAR GYM</text>
+</svg>

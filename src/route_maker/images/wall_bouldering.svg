@@ -1,0 +1,44 @@
+<svg style="max-width:100%; height:auto; display:block;" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+  <!-- default geometry values for this type of wall -->
+  <metadata>{"width":"1500","height":"600"}</metadata>
+
+  <rect width="800" height="500" fill="#FFFEFB"/>
+
+  <!-- floor -->
+  <line x1="32" y1="400" x2="768" y2="400" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- bouldering wall - low and wide with overhang geometry -->
+  <!-- left vertical slab -->
+  <path d="M 80 90 L 280 90 L 280 385 L 80 385 Z" fill="#EDE9E2" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- center steep -->
+  <path d="M 280 90 L 520 90 L 540 385 L 280 385 Z" fill="#EAE6DF" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- right overhang volume - angled out -->
+  <path d="M 520 90 L 720 90 L 720 165 L 600 210 L 540 210 Z" fill="#E0DBD2" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M 540 210 L 600 210 L 620 385 L 540 385 Z" fill="#E5E0D7" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- overhang underside line -->
+  <line x1="600" y1="210" x2="720" y2="165" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- volumes / geometric features - minimal triangles -->
+  <path d="M 140 210 L 190 200 L 170 250 Z" fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-linejoin="round" opacity="0.7"/>
+  <path d="M 380 150 L 440 140 L 420 200 Z" fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-linejoin="round" opacity="0.7"/>
+  <path d="M 620 120 L 670 110 L 660 150 Z" fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-linejoin="round" opacity="0.5"/>
+
+  <!-- holds - bouldering style, fewer but larger, clustered -->
+  <g>
+    <circle cx="150" cy="140" r="10" fill="#E07A5F"/>
+    <circle cx="200" cy="180" r="9" fill="#81B29A"/>
+    <circle cx="135" cy="290" r="11" fill="#F2CC8F"/>
+    <circle cx="210" cy="330" r="10" fill="#E07A5F"/>
+    <circle cx="360" cy="130" r="10" fill="#F2CC8F"/>
+    <circle cx="400" cy="220" r="11" fill="#81B29A"/>
+    <circle cx="460" cy="280" r="10" fill="#E07A5F"/>
+    <circle cx="340" cy="310" r="9" fill="#F2CC8F"/>
+    <circle cx="590" cy="145" r="10" fill="#81B29A"/>
+    <circle cx="650" cy="190" r="11" fill="#E07A5F"/>
+    <circle cx="580" cy="260" r="10" fill="#F2CC8F"/>
+    <circle cx="595" cy="330" r="9" fill="#81B29A"/>
+  </g>
+
+  <!-- footer -->
+  <rect x="110" y="408" width="580" height="10" rx="3" fill="#1A1A1A" opacity="0.06"/>
+  <text x="400" y="455" font-family="Inter, sans-serif" font-size="14" letter-spacing="2.5" fill="#1A1A1A" opacity="0.85" text-anchor="middle">BOULDERING GYM</text>
+</svg>

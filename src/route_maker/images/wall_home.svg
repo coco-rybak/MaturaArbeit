@@ -1,0 +1,32 @@
+<svg style="max-width:100%; height:auto; display:block;" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+  <!-- default geometry values for this type of wall -->
+  <metadata>{"width":"300","height":"200"}</metadata>
+
+  <rect width="800" height="500" fill="#FFFEFB"/>
+
+  <!-- floor -->
+  <line x1="32" y1="400" x2="768" y2="400" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- single large wall panel -->
+  <rect x="70" y="75" width="660" height="315" rx="1" fill="#EDE9E2" stroke="#222" stroke-width="2.6"/>
+
+  <!-- wood grain hint -->
+  <line x1="70" y1="140" x2="730" y2="140" stroke="#222" stroke-width="1" opacity="0.1"/>
+  <line x1="70" y1="210" x2="730" y2="210" stroke="#222" stroke-width="1" opacity="0.1"/>
+  <line x1="70" y1="285" x2="730" y2="285" stroke="#222" stroke-width="1" opacity="0.1"/>
+  <line x1="70" y1="350" x2="730" y2="350" stroke="#222" stroke-width="1" opacity="0.07"/>
+  
+  <!-- holds spread across wall -->
+  <circle cx="160" cy="135" r="16" fill="#E07A5F"/>
+  <circle cx="340" cy="120" r="14" fill="#81B29A"/>
+  <circle cx="560" cy="145" r="17" fill="#F2CC8F"/>
+  <circle cx="210" cy="235" r="15" fill="#81B29A"/>
+  <circle cx="440" cy="210" r="18" fill="#E07A5F"/>
+  <circle cx="650" cy="250" r="14" fill="#81B29A"/>
+  <circle cx="310" cy="330" r="16" fill="#F2CC8F"/>
+  <circle cx="530" cy="335" r="15" fill="#E07A5F"/>
+
+  <!-- footer -->
+  <rect x="110" y="408" width="580" height="10" rx="3" fill="#1A1A1A" opacity="0.06"/>
+  <text x="400" y="455" font-family="Inter, sans-serif" font-size="14" letter-spacing="2.5" fill="#1A1A1A" opacity="0.85" text-anchor="middle">HOME GYM</text>
+</svg>

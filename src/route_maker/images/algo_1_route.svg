@@ -1,0 +1,33 @@
+<svg style="max-width:100%; height:auto; display:block;" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+  <rect width="800" height="500" fill="#FFFEFB"/>
+
+  <!-- vertical divider -->
+  <line x1="400" y1="40" x2="400" y2="460" stroke="#1A1A1A" stroke-width="1.2" opacity="0.12" stroke-dasharray="8 8"/>
+
+  <!-- LEFT: text description -->
+  <g font-family="'Poppins', 'Inter', system-ui, sans-serif">
+    <text x="40" y="92" font-size="11" letter-spacing="1.6" fill="#1A1A1A" opacity="0.42" font-weight="600">Programm Möglichkeit 1</text>
+    <text x="40" y="132" font-size="28" fill="#1A1A1A" font-weight="700" letter-spacing="-0.5">Route</text>
+    <text x="40" y="200" font-size="20" fill="#1A1A1A" opacity="0.7" font-weight="400">Erstellt eine einfache Route. </text>
+    <text x="40" y="230" font-size="20" fill="#1A1A1A" opacity="0.7" font-weight="400"> Die Dimensionen der Route sind  </text>
+    <text x="40" y="260" font-size="20" fill="#1A1A1A" opacity="0.7" font-weight="400">  frei wählbar. </text>
+    <!-- subtle stats -->
+  </g>
+
+  <!-- climbing wall on the right -->
+
+  <rect x="442" y="58" width="312" height="386" rx="10" fill="#EDE9E2" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- background -->
+
+  <circle cx="520" cy="405" r="14" fill="#FF3500"  stroke-width="1.8"/>
+  <circle cx="560" cy="352" r="14" fill="#FF3500"  stroke-width="1.8"/>
+  <circle cx="595" cy="298" r="14" fill="#FF3500" stroke-width="1.8"/>
+  <circle cx="565" cy="242" r="14" fill="#FF3500"  stroke-width="1.8"/>
+  <circle cx="610" cy="192" r="14" fill="#FF3500"  stroke-width="1.8"/>
+  <circle cx="585" cy="135" r="14" fill="#FF3500"  stroke-width="1.8"/>
+  <circle cx="630" cy="88" r="14" fill="#FF3500"  stroke-width="1.8" opacity="0.95"/>
+
+
+  <!-- bottom label -->
+  <text x="442" y="472" font-family="'Poppins', system-ui, sans-serif" font-size="11" letter-spacing="1.6" fill="#1A1A1A" opacity="0.38" font-weight="600">Beispiel Route</text>
+</svg>
