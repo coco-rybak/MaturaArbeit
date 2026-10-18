@@ -49,11 +49,6 @@ class MyObject:
     def __init__(self, x, y):
         self.position = [x, y]
 
-def position_generator():
-
-
-    #2-dimensional positioning
-
 '''
 #french scale to interval translation (amount of points for the generator)
 def converter_grade():
